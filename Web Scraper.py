@@ -1,17 +1,4 @@
 '''''''''
-[#]Project Documentation
-"Dark Web Scraper"
-Alexander M. Sapo
-BSIT 1st year 2nd Semester Finals Project "Human Computer Interaction"
-
-goal:
-learn offensive programming & efficient Open source Intelligence
-
-
-What is Web Scraper?
-an automated method of gathering data from webs.
-
-
 The web scraping process:
 
 1. Identify the targeted website
@@ -20,15 +7,10 @@ The web scraping process:
 4. Use locators (specify) to find the data in HTML
 5. Save data in a JSON
 
-#note: NO CRAWLERS  for now
-instead scrape target data and links along within the first web page you  get
-then just repeat the process..
-
 //setup tor proxy
 //dark web as option parse request to tor 
 
-
- HTML  - hyper text markup language (describes all elements in a webpage)
+HTML  - hyper text markup language (describes all elements in a webpage)
 manual inspection (right click(inspect)) ctrl + f  (see the structure)
 -------------------------------------------------------
 ..find specific data
