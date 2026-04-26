@@ -1,80 +1,87 @@
-# Web Scraper (Educational Project)
+<h1 align="center">Web Scraper</h1>
+<p align="center">
+  <b>Educational Web Data Extraction Tool</b><br>
+  HTML Parsing • Pattern Matching • Data Extraction
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-educational-black?style=flat-square">
+  <img src="https://img.shields.io/badge/focus-web--scraping-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/type-data--extraction-critical?style=flat-square">
+</p>
+
+---
 
 ## Overview
 
-This project demonstrates the fundamentals of web scraping using Python. It focuses on extracting and processing structured data from web pages using HTML parsing techniques.
+This project demonstrates the fundamentals of web scraping using Python. It focuses on extracting and processing structured data from web pages through HTML parsing and pattern matching techniques.
 
-It is intended for **educational purposes only**, particularly to understand how web data extraction, parsing, and pattern matching work in real-world applications.
+It is intended for educational use to understand how web data extraction works in real-world systems.
 
 ---
 
 ## Core Workflow
 
-The scraping process follows a general pipeline:
-
-1. Identify a target website
-2. Send an HTTP request to retrieve the page content
-3. Parse the HTML structure of the response
-4. Locate and extract specific data using selectors or patterns
-5. Process and store extracted data in a structured format (e.g., JSON or text)
+1. Identify a target website  
+2. Send an HTTP request to retrieve page content  
+3. Parse HTML structure from the response  
+4. Extract relevant data using selectors and patterns  
+5. Process and display extracted information  
 
 ---
 
 ## Key Concepts
 
 ### HTML Parsing
-HTML (HyperText Markup Language) defines the structure of a webpage.  
-This project demonstrates how to:
-- Inspect page structure manually (browser developer tools)
-- Locate elements using tags and attributes
-- Extract readable text from structured HTML
+HTML defines the structure of a webpage. This project demonstrates how to:
+- Inspect webpage structure using browser developer tools
+- Navigate HTML elements and tags
+- Extract readable content from structured markup
 
 ---
 
 ### Data Extraction Techniques
-
-- Element-based searching using HTML selectors
-- Attribute filtering (e.g., links, tags, metadata)
-- Text cleaning and normalization
+- Anchor tag parsing for links
+- Attribute-based filtering
+- Text extraction from HTML elements
+- Data cleaning and formatting
 
 ---
 
-### Pattern Matching (Regex)
-
-Regular expressions are used to identify structured patterns in text such as:
+### Pattern Matching
+Regular expressions are used to identify structured patterns such as:
 - usernames
 - links
-- formatted identifiers
+- formatted text patterns
 
 ---
 
 ## Features Demonstrated
 
-- HTTP requests for webpage retrieval
+- HTTP request handling for web content retrieval
 - HTML parsing using BeautifulSoup
-- Text extraction from web pages
-- Pattern-based data filtering
-- Structured output formatting
-- Optional proxy routing concept for network-aware scraping (for learning purposes)
+- Structured data extraction from pages
+- Regex-based pattern filtering
+- Basic data formatting and output handling
+- Conceptual understanding of proxy-based request routing (educational context)
 
 ---
 
 ## Data Types Targeted
 
-- Text content from web pages
-- Hyperlinks extracted from anchor tags
-- Pattern-based identifiers (e.g., usernames or tagged strings)
+- Page text content
+- Hyperlinks from HTML anchor tags
+- Pattern-based identifiers (e.g., usernames)
 
 ---
 
 ## Educational Purpose
 
 This project is designed to help understand:
-
-- How websites structure data
-- How scrapers interact with web content
+- How web pages structure and present data
+- How scraping tools interact with HTML content
 - How extracted data can be processed programmatically
-- Basic challenges in web data extraction
+- Core principles behind web data collection systems
 
 ---
 
@@ -85,4 +92,4 @@ This project is intended strictly for:
 - Learning web scraping fundamentals
 - Controlled and authorized environments
 
-Users are responsible for ensuring compliance with applicable laws and website terms of service when working with web data.
+Users are responsible for ensuring compliance with applicable laws and website terms of service when handling web data.
