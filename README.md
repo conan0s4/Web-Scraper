@@ -2,7 +2,7 @@
 
 # Scrap3r
 
-### Web Reconnaissance Tool 
+### Web Scraping Tool | Data Extraction
 
 </div>
 
@@ -10,35 +10,45 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-active-brightgreen" />
-  <img src="https://img.shields.io/badge/focus-web--pentesting-red" />
-  <img src="https://img.shields.io/badge/type-reconnaissance-blue" />
+  <img src="https://img.shields.io/badge/type-scraper-blue" />
+  <img src="https://img.shields.io/badge/focus-osint-red" />
 </p>
 
 ---
 
 ## Overview
 
-R3con is a reconnaissance tool for passive and active information gathering, built for web penetration testing.  
-It acts as a lightweight framework that combines multiple recon techniques into a single workflow.
+Scrap3r is a lightweight Python-based scraping tool used for extracting publicly available information from web pages.
+
+It supports both standard HTTP requests and optional Tor routing for `.onion` domains.
 
 ---
 
 ## Features
 
-- Passive reconnaissance (OSINT-based collection)
-- Active reconnaissance (direct target interaction)
-- HTML parsing and data extraction
-- Link enumeration and crawling
-- Email, IP, and domain detection
-- Subdomain and metadata extraction
-- Tor-compatible scraping support
-- Lightweight and fast execution
+- Web page scraping via HTTP
+- Optional Tor routing support
+- Extract usernames (`@handles`)
+- Extract emails
+- Extract IP addresses
+- Extract domains and subdomains
+- Extract phone numbers
+- Extract links (including `.onion`)
+- HTML title and heading extraction
+- HTML comment extraction
+- Regex-based data parsing
 
 ---
 
-## Installation
+## Usage
+
+- Target web: URL or domain to target  
+- Use Tor: `y` or `n` to enable/disable Tor routing  
+- Timeout: request timeout  
+
+### Example
 
 ```bash
-git clone https://github.com/yourname/r3con.git
-cd r3con
-pip install -r requirements.txt
+Target web >> https://example.com/
+Use Tor? [y/n] >> y
+input timeout >> 10
