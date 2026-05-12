@@ -1,9 +1,8 @@
 <div align="center">
 
-# R3con
+# Scrap3r
 
-### Web Reconnaissance Tool  
-Passive • Active Recon
+### Web Reconnaissance Tool 
 
 </div>
 
