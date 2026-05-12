@@ -1,95 +1,200 @@
-<h1 align="center">Web Scraper</h1>
-<p align="center">
-  <b>Educational Web Data Extraction Tool</b><br>
-  HTML Parsing • Pattern Matching • Data Extraction
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surface x Dark Web Scraper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+    }
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-educational-black?style=flat-square">
-  <img src="https://img.shields.io/badge/focus-web--scraping-blue?style=flat-square">
-  <img src="https://img.shields.io/badge/type-data--extraction-critical?style=flat-square">
-</p>
+    .container {
+      width: 80%;
+      margin: auto;
+      padding: 40px 0;
+    }
 
----
+    .header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 1px solid #30363d;
+    }
 
-## Overview
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+    }
 
-This project demonstrates the fundamentals of web scraping using Python. It focuses on extracting and processing structured data from web pages through HTML parsing and pattern matching techniques.
+    .subtitle {
+      color: #8b949e;
+      margin-top: 8px;
+    }
 
-It is intended for educational use to understand how web data extraction works in real-world systems.
+    .badge {
+      display: inline-block;
+      background: #238636;
+      padding: 4px 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-size: 12px;
+    }
 
----
+    h2 {
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 6px;
+      margin-top: 30px;
+    }
 
-## Core Workflow
+    pre {
+      background: #161b22;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
 
-1. Identify a target website  
-2. Send an HTTP request to retrieve page content  
-3. Parse HTML structure from the response  
-4. Extract relevant data using selectors and patterns  
-5. Process and display extracted information  
+    code {
+      background: #161b22;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
 
----
+    .warning {
+      background: #2a1a1a;
+      border-left: 4px solid #f85149;
+      padding: 10px;
+      margin-top: 15px;
+    }
 
-## Key Concepts
+    ul, ol {
+      line-height: 1.6;
+    }
+  </style>
+</head>
 
-### HTML Parsing
-HTML defines the structure of a webpage. This project demonstrates how to:
-- Inspect webpage structure using browser developer tools
-- Navigate HTML elements and tags
-- Extract readable content from structured markup
+<body>
 
----
+<div class="container">
 
-### Data Extraction Techniques
-- Anchor tag parsing for links
-- Attribute-based filtering
-- Text extraction from HTML elements
-- Data cleaning and formatting
+  <!-- HEADER -->
+  <div class="header">
+    <div class="title">Surface x Dark Web Scraper</div>
+    <div class="subtitle">OSINT Recon Tool for Surface and Dark Web Intelligence Gathering</div>
+    <div class="badge">Python • BeautifulSoup • Requests • Tor Support</div>
+  </div>
 
----
+  <!-- ABOUT -->
+  <h2>About</h2>
+  <p>
+    A lightweight reconnaissance tool designed for extracting structured intelligence from web pages.
+    It supports both standard HTTP requests and Tor routing for .onion domain analysis when configured.
+  </p>
 
-### Pattern Matching
-Regular expressions are used to identify structured patterns such as:
-- usernames
-- links
-- formatted text patterns
+  <!-- WARNING -->
+  <div class="warning">
+    This tool is intended for educational and authorized security testing only. Unauthorized use is strictly prohibited.
+  </div>
 
----
+  <!-- FEATURES -->
+  <h2>Features</h2>
+  <ul>
+    <li>Standard and Tor-based HTTP requests</li>
+    <li>Extraction of usernames, emails, IP addresses, and domains</li>
+    <li>Detection of subdomains and phone numbers</li>
+    <li>Link and onion URL parsing</li>
+    <li>HTML metadata extraction (titles, headings, comments)</li>
+    <li>Regex-based OSINT data gathering</li>
+  </ul>
 
-## Features Demonstrated
+  <!-- INSTALLATION -->
+  <h2>Installation</h2>
+  <pre>
+pip install requests beautifulsoup4
+  </pre>
 
-- HTTP request handling for web content retrieval
-- HTML parsing using BeautifulSoup
-- Structured data extraction from pages
-- Regex-based pattern filtering
-- Basic data formatting and output handling
-- Conceptual understanding of proxy-based request routing (educational context)
+  <p>Optional requirements for Tor support:</p>
+  <ul>
+    <li>Tor service running locally</li>
+    <li>Socks proxy enabled on 127.0.0.1:9050</li>
+  </ul>
 
----
+  <!-- USAGE -->
+  <h2>Usage</h2>
+  <pre>
+python scraper.py
+  </pre>
 
-## Data Types Targeted
+  <p>Input example:</p>
+  <pre>
+Target web >> https://example.com
+Use Tor? [y/n] >> y
+input timeout >> 10
+  </pre>
 
-- Page text content
-- Hyperlinks from HTML anchor tags
-- Pattern-based identifiers (e.g., usernames)
+  <!-- OUTPUT -->
+  <h2>Output Example</h2>
+  <pre>
+[+] Usernames found:
+@admin
 
----
+[+] Emails found:
+test@example.com
 
-## Educational Purpose
+[+] Links found:
+https://example.com/page
 
-This project is designed to help understand:
-- How web pages structure and present data
-- How scraping tools interact with HTML content
-- How extracted data can be processed programmatically
-- Core principles behind web data collection systems
+[+] IPs found:
+192.168.1.1
+  </pre>
 
----
+  <!-- HOW IT WORKS -->
+  <h2>How It Works</h2>
+  <ol>
+    <li>User inputs target URL</li>
+    <li>HTTP request is sent (Tor optional)</li>
+    <li>BeautifulSoup parses HTML content</li>
+    <li>Regex extracts OSINT indicators</li>
+    <li>Results are grouped and displayed</li>
+  </ol>
 
-## Disclaimer
+  <!-- TECH STACK -->
+  <h2>Tech Stack</h2>
+  <ul>
+    <li>Python 3</li>
+    <li>Requests</li>
+    <li>BeautifulSoup4</li>
+    <li>Regex</li>
+  </ul>
 
-This project is intended strictly for:
-- Educational use
-- Learning web scraping fundamentals
-- Controlled and authorized environments
+  <!-- STRUCTURE -->
+  <h2>Repository Structure</h2>
+  <pre>
+recon-tool/
+├── scraper.py
+├── extractor.py
+├── requirements.txt
+├── README.html
+  </pre>
 
-Users are responsible for ensuring compliance with applicable laws and website terms of service when handling web data.
+  <!-- FUTURE -->
+  <h2>Future Improvements</h2>
+  <ul>
+    <li>Recursive crawling system</li>
+    <li>Export results to JSON and CSV</li>
+    <li>Async scraping performance upgrade</li>
+    <li>Deduplication layer for results</li>
+    <li>Stealth request headers and rate limiting</li>
+  </ul>
+
+  <!-- DISCLAIMER -->
+  <div class="warning">
+    Legal Notice: Use only on systems you own or have explicit authorization to test.
+  </div>
+
+</div>
+
+</body>
+</html>
